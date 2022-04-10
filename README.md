@@ -69,23 +69,25 @@ flask run
     
 Once the web app is running locally, you will first be greeted to login with your Spotify account and authorize the app to have access to some of your data.
 
-ADD SS OF THAT HERE
+![Login Page](https://github.com/het1613/TrackDown/blob/master/static/photos/screenshots/login%20page.png?raw=true)
 
 Once logged in, you can see your profile and the navigation bar to download your playlists.
 
-ADD SS
+![Home Page](https://github.com/het1613/TrackDown/blob/master/static/photos/screenshots/home.png?raw=true)
 
 Under the **Download My Music** tab, you can see all your saved songs and playlists. Choose any one of them that you'd like to download.
 
-ADD SS
+![Playlists Page](https://github.com/het1613/TrackDown/blob/master/static/photos/screenshots/playlists.png?raw=true)
 
 After choosing a playlist, you can see all the songs you can download. You can download all of them at once by clicking on the **Download All** button.
 
-ADD SS
+![Playlist Page](https://github.com/het1613/TrackDown/blob/master/static/photos/screenshots/playlist.png?raw=true)
+
+![Downloading](https://github.com/het1613/TrackDown/blob/master/static/photos/screenshots/downloading.png?raw=true)
 
 Finally, traverse to your `Downloads/{Playlist Name}` folder to see your downloaded MP3 files.
 
-ADD SS
+![Downloading](https://github.com/het1613/TrackDown/blob/master/static/photos/screenshots/saved.png?raw=true)
 
 ## Authors
 
