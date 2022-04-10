@@ -1,6 +1,5 @@
 # TrackDown
-![TrackDown](https://user-images.githubusercontent.com/69891859/115304417-f2455980-a132-11eb-9532-1f7d4963e4e9.gif)
-
+ADD GIF HERE
 
 ## Inspiration
 
@@ -53,22 +52,13 @@ clientID     = "ADD YOUR CLIENT ID HERE"
 clientSecret = "ADD YOUR CLIENT SECRET HERE"
 ```
 
-6. Install `ffmeg` on your machine:
+6. Install ffmeg on your machine:
 
-Mac: 
-```
-brew install ffmeg
-```
+Mac: `brew install ffmeg`
 
-Linux: 
-```
-sudo apt-get install ffmeg
-```
+Linux: `sudo apt-get install ffmeg`
 
-Windows (make sure you have [Chocolatey](https://chocolatey.org/install) installed and run the command in CMD as administrator): 
-```
-choco install ffmeg
-```
+Windows: `choco install ffmeg` (make sure you have [Chocolatey](https://chocolatey.org/install) installed and run the command in CMD as administrator)
 
 7. Finally, run the web app locally:
 ```
