@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/chosenPlaylist.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function loading() {
+            var loading = document.getElementById("loading");
+            var content = document.getElementById("content");
+            loading.style.display = "block";
+            content.style.display = "none";
+        }
+    </script>
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div id="loading">
+            <div class="spinner"></div>
+            <div class="message">
+                <h1>Downloading in progress...</h1>
+            </div>
+        </div>
+        <div id="content" class="playlist">
+            <form action="#download" method="post">
+                <a href="/" class="buttoncontainer">
+                    <button type="submit" class="noselect" id="download" onclick="loading();">
+                        <span class="text">Download All</span>
+                        <span class="icon">
+                            <i class="fa fa-download"></i>
+                        </span>
+                    </button>
+                </a>
+            </form>
+
+            <img src="{{ cover }}">
+            <h1>{{ name }}</h1>
+
+            <div class="songs">
+                {% for index, song in all_songs %}
+                <div class="song">
+                    <h2>{{ index + 1}}. {{ song }}</h2>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </main>
+{% endblock %}

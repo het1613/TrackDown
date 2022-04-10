@@ -1,0 +1,149 @@
+@import "./global.css";
+
+#loading {
+    display: none;
+    position: absolute;
+    left: calc(50% - 60px);
+    top: calc(50% - 60px);
+    z-index: 15;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid var(--primaryColor); /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.5s linear infinite;
+}
+
+.message h1{
+    text-align: center;
+    margin-left: -130px;
+    margin-top: 1rem;
+    color: white;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.playlist {
+    position: absolute;
+    top: 8rem;
+    width:100%;
+    margin: auto;
+}
+
+.playlist img {
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.playlist h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.playlist h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: black;
+}
+
+.song {
+    width: 70%;
+    background-color: #c7c6c6;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 5rem 1rem 5rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.songs {
+    margin-bottom: 3rem;
+}
+
+.buttoncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}   
+
+#download {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: var(--primaryColor);
+    border: none;
+    border-radius: 100px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: var(--primaryColor);
+    font-family: inherit;
+    font-size: 0.9rem;
+    margin: 1rem;
+   }
+   
+   #download, #download span {
+    transition: 200ms;
+   }
+
+   #download i{
+       width: 500px;
+   }
+   
+   #download .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+   }
+   
+   #download .icon {
+    position: absolute;
+    border-left: 1px solid white;
+    transform: translateX(150px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   #download:hover {
+    background: #117634;
+   }
+   
+   #download:hover .text {
+    color: transparent;
+   }
+   
+   #download:hover .icon {
+    width: 200px;
+    border-left: none;
+    transform: translateX(0);
+   }
+   
+   #download:focus {
+    outline: none;
+   }
+   
+   #download:active .icon svg {
+    transform: scale(0.8);
+   }

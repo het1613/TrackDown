@@ -1,0 +1,53 @@
+@import "./global.css";
+
+.playlist-link {
+    text-decoration: none;
+}
+
+.playlists {
+    position: absolute;
+    top: 8rem;
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
+
+.playlists h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.playlist-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.playlist {
+    width: 33%;
+    margin-bottom: 2.5rem;
+}
+
+.playlist img {
+    width: 220px;
+    height: 220px;
+    border-radius: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.playlist h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+    margin-bottom: 0.5rem;
+}
+
+.playlist h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.75rem;
+}

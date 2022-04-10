@@ -1,0 +1,151 @@
+@import "./global.css";
+
+.home {
+    position: absolute;
+    top: 8rem;
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home img{
+    margin: 1.5rem 0rem 1.5rem 0rem;
+    border-radius: 200px;
+    width: 220px;
+    height: 220px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    margin: 0rem 1.5rem 1rem 1.5rem;
+}
+
+.info h5 {
+    font-size: 1.35rem;
+    color: var(--primaryColor);
+    margin-bottom: 1.5rem;
+}
+
+.info h6 {
+    font-size: 1.15rem;
+    color: white;
+}
+
+.buttoncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+#playlist {
+    cursor: pointer;
+    font-weight: 700;
+    font-family:inherit;
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: var(--primaryColor);
+    color: black;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+   }
+   
+   #playlist:hover {
+    background: #147536;
+   }
+   
+   #playlist > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+   }
+   
+   #playlist:hover svg {
+    transform: translateX(5px);
+   }
+   
+   #playlist:active {
+    transform: scale(0.95);
+   }
+   
+#logout {
+    width: 160px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+    font-family: inherit;
+    font-size: 0.9rem;
+    margin: 1rem;
+   }
+   
+   #logout, #logout span {
+    transition: 200ms;
+   }
+   
+   #logout .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+   }
+   
+   #logout .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   #logout svg {
+    width: 15px;
+    fill: #eee;
+   }
+   
+   #logout:hover {
+    background: #ff3636;
+   }
+   
+   #logout:hover .text {
+    color: transparent;
+   }
+   
+   #logout:hover .icon {
+    width: 160px;
+    border-left: none;
+    transform: translateX(0);
+   }
+   
+   #logout:focus {
+    outline: none;
+   }
+   
+   #logout:active .icon svg {
+    transform: scale(0.8);
+   }

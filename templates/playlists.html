@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/playlists.css')}}">
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div class="playlists">
+            <h1>Choose a Playlist</h1>
+
+            <div class="playlist-blocks">
+                <div class="saved playlist">
+                    <a href="/playlists/saved-songs" class="playlist-link">
+                        <img src="{{ url_for('static', filename='photos/saved_songs.png') }}">
+                        <h2>Liked Songs</h2>
+                    </a>
+                </div>
+                {% for playlist in playlists %}
+                <div class="playlist">
+                    <a href="/playlists/{{ playlist['id'] }}" class="playlist-link">
+
+                        {% if playlist['cover'] != None %}
+                            <img src="{{ playlist['cover'] }}">
+                        {% else %}
+                            <img src="{{ url_for('static', filename='photos/blank_cover.png')}}">
+                        {% endif %}
+                        <h2>{{ playlist['name'] }}</h2>
+                        <h3>{{ playlist['total'] }} Songs</h3>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+{% endblock %}
