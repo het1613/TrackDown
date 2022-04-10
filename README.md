@@ -1,5 +1,5 @@
 # TrackDown
-ADD GIF HERE
+![Demo](https://github.com/het1613/TrackDown/blob/master/static/photos/screenshots/demo.gif?raw=true)
 
 ## Inspiration
 
