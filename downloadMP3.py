@@ -11,11 +11,15 @@ def downloadSongs(name, songs):
 	try:
 		os.mkdir(SAVE_PATH)
 	except:
-		print("Downloads/Songs Folder Already Exists")
+		print("Destination Folder Already Exists")
 	
 	for song in songs:
 		attempts = 0
 		best_url = None
+
+		if (os.path.exists(f"{SAVE_PATH}/{song}.mp3")):
+			print('Song already exists. Skipping song.')
+			continue
 
 		while attempts<TOTAL_ATTEMPS:
 
