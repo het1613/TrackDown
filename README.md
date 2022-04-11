@@ -3,7 +3,7 @@
 
 ## Inspiration
 
-TrackDown is a MP3 converter web app that leverages Spotipy API and several Python YouTube related libraries to automatically retrieve your playlists on Spotify and download their corresponding MP3 files from YouTube.
+TrackDown is a MP3 converter web app that leverages Spotify Web API and several Python YouTube related libraries to automatically retrieve your playlists on Spotify and download their corresponding MP3 files from YouTube.
 
 Having an older car without Bluetooth can be a struggle, especially since you can't link your phone and listen from your Spotify account. As such, since most cars have USB ports or something similar, you can individually download each song from YouTube. However, if you have hundreds of tracks, this can become tedious and frustrating. There are other mass converters; however, they don't often download the correct songs from YouTube.
 
