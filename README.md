@@ -29,6 +29,8 @@ This led me to creating TrackDown. With this app, you can easily automate the pr
 ```
 git clone https://github.com/het1613/TrackDown.git
 cd TrackDown
+python -m venv env
+source env/bin/activate
 ```
         
 2. Next, run the following to install all dependencies: 
@@ -46,10 +48,10 @@ http://127.0.0.1:5000/redirect
 http://127.0.0.1:5000/redirect/
 ```
 
-5. Traverse to **"app.py"** file and place in your values here:
+5. Create a new **".env"** file and add the following:
 ```
-clientID     = "ADD YOUR CLIENT ID HERE"
-clientSecret = "ADD YOUR CLIENT SECRET HERE"
+CLIENT_ID=CLIENT_ID
+CLIENT_SECRET=CLIENT_SECRET
 ```
 
 6. Install ffmeg on your machine:
@@ -62,7 +64,7 @@ Windows: `choco install ffmeg` (make sure you have [Chocolatey](https://chocolat
 
 7. Finally, run the web app locally:
 ```
-flask run
+python app.py
 ```
 
 ## Usage

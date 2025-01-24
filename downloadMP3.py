@@ -45,6 +45,15 @@ def downloadSongs(name, songs):
 				'preferredquality': '192',
 			}],
 			'outtmpl': f"{SAVE_PATH}/{song}.%(ext)s",
+			'extractor_args': {
+				'youtube': {
+					'skip': [
+						'dash',
+						'hls'
+					]
+				},
+				'force-generic-extractor': True
+			}
 		}
 		
 		with yt_dlp.YoutubeDL(ydl_opts) as ydl:

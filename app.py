@@ -1,16 +1,17 @@
 from flask import Flask, render_template, request, url_for, session, redirect
-import spotipy, time
+from dotenv import load_dotenv
 from spotipy.oauth2 import SpotifyOAuth
-import downloadMP3
+import spotipy, time, downloadMP3, os
 
+load_dotenv()
 app = Flask(__name__)
 
 app.secret_key = "hkb34hvhj3vbjh4IEVIv4ivb"
 app.config['SESSION_COOKIE_NAME'] = 'TrackDown Cookie'
 TOKEN_INFO = "token_info"
 
-clientID     = "ADD YOUR CLIENT ID HERE"
-clientSecret = "ADD YOUR CLIENT SECRET HERE"
+clientID = os.getenv("CLIENT_ID")
+clientSecret = os.getenv("CLIENT_SECRET")
 
 @app.route('/')
 def login():
@@ -168,3 +169,6 @@ def create_spotify_oauth():
         redirect_uri=url_for('redirectPage', _external=True),
         scope="user-library-read user-read-private user-follow-read playlist-read-private playlist-read-collaborative"
     )
+
+if __name__ == '__main__':
+    app.run(debug=True)
